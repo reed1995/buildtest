@@ -2,19 +2,9 @@ name: "Build"
 
 on:
   push:
-    branches:
-      - master
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
-  workflow_dispatch:
-    branches:
-      - master
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
       
 jobs:
   build:
